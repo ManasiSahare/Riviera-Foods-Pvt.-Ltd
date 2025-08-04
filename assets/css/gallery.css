@@ -1,0 +1,51 @@
+.filter-button {
+    /* Adjust as needed */
+    font-size: 16px; /* Adjust as needed */
+    background-color: #62A403;
+    border: none;
+    border: 1px solid #62a403;
+    cursor: pointer;
+    border-radius: 3px;
+    color: whitesmoke;
+    font-size: medium;
+    margin: 0px 10px;
+    display: inline-block; /* Added to allow centering */
+}
+.filter-button:hover {
+    background-color: #62A403;
+}
+
+.filter-button.active {
+    background-color:#4a7a06;
+}
+
+.button-container {
+    text-align: center; /* Centers the buttons */
+}
+
+.filter-gallery {
+    display: block;
+}
+
+.image-container {
+    margin-top: 1em;
+    column-count: 3; /*column-count helps to create a grid layout*/
+    column-gap: 10px;
+}
+
+.gallery-item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        column-count: 1; /*adjusted to 1 column for mobile*/
+    }
+}
